@@ -1,4 +1,4 @@
-#include "../filemon.h"
+#include "filemon.h"
 #include <stdio.h>
 
 void file_changed_callback(char* path) {
