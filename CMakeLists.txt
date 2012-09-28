@@ -7,7 +7,7 @@ project(filemon_tests)
 include(FindPkgConfig)
 pkg_check_modules(GLIB glib-2.0)
 
-SET(CMAKE_C_FLAGS "-g -Wall")
+SET(CMAKE_C_FLAGS "-g -Wall -O0")
 foreach(arg ${GLIB_CFLAGS})
     set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ${arg}")
 endforeach(arg ${CMAKE_C_FLAGS})
